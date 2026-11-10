@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c6cff"/>
+      <stop offset="0.55" stop-color="#4f7dff"/>
+      <stop offset="1" stop-color="#22c1e6"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="0.3" cy="0.15" r="0.9">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="0.6" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="capTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e9edff"/>
+    </linearGradient>
+    <linearGradient id="capSide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c3cbf5"/>
+      <stop offset="1" stop-color="#9fa9e6"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb84d"/>
+      <stop offset="1" stop-color="#ff6a3d"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#1b1460" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- fondo -->
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#bg)"/>
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#shine)"/>
+
+  <!-- tecla chica de atrás (modificador) -->
+  <g filter="url(#shadow)" opacity="0.92">
+    <rect x="20" y="28" width="40" height="40" rx="10" fill="url(#capSide)"/>
+    <rect x="20" y="24" width="40" height="38" rx="10" fill="url(#capTop)"/>
+    <path d="M33 37 l7 -6 l7 6" fill="none" stroke="#6b72c9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M40 32 v20" fill="none" stroke="#6b72c9" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- tecla grande de adelante -->
+  <g filter="url(#shadow)">
+    <rect x="46" y="50" width="60" height="60" rx="14" fill="url(#capSide)"/>
+    <rect x="46" y="44" width="60" height="58" rx="14" fill="url(#capTop)"/>
+    <path d="M80 54 L63 77 h11 l-4 17 l19 -25 h-12 z" fill="url(#bolt)" stroke="#e8562f" stroke-width="1.5" stroke-linejoin="round"/>
+  </g>
+</svg>
